@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARTHAVENA | Angkatan 2027</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0b0b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,.8);
+  z-index: 10;
+}
+
+.logo {
+  color: #d6b46a;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 13px;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.9)),
+  url('g.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero small {
+  color: #d6b46a;
+  letter-spacing: 6px;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 10vw, 100px);
+  color: #e5c47c;
+  letter-spacing: 8px;
+  margin: 20px 0;
+}
+
+.hero p {
+  color: #ddd;
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 13px 30px;
+  border: 1px solid #d6b46a;
+  color: #d6b46a;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+section {
+  padding: 90px 8%;
+  text-align: center;
+}
+
+.judul {
+  color: #d6b46a;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  color: #bbb;
+  line-height: 2;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+.timeline {
+  max-width: 600px;
+  margin: auto;
+  border-left: 2px solid #d6b46a;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.event {
+  margin-bottom: 35px;
+}
+
+.event h3 {
+  color: #d6b46a;
+  margin-bottom: 10px;
+}
+
+.event p {
+  color: #aaa;
+  line-height: 1.7;
+}
+
+footer {
+  padding: 30px;
+  background: #050505;
+  text-align: center;
+  color: #888;
+  line-height: 2;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">ARTHAVENA.</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">Tentang</a>
+    <a href="#gallery">Galeri</a>
+    <a href="#story">Cerita</a>
+  </div>
+</nav>
+
+<div class="hero" id="home">
+  <small>VOCATIONAL GENERATION 2027</small>
+  <h1>ARTHAVENA</h1>
+  <p>
+    𝐀𝐧𝐠𝐤𝐚𝐭𝐚𝐧 𝟑𝟐 𝐒𝐦𝐤 𝐌𝐚’𝐚𝐫𝐢𝐟 𝐍𝐔 𝐏𝐚𝐠𝐮𝐲𝐚𝐧𝐠𝐚𝐧
+“𝘬𝘦𝘮𝘢𝘬𝘮𝘶𝘳𝘢𝘯,𝘯𝘪𝘭𝘢𝘪 𝘯𝘪𝘭𝘢𝘪 𝘭𝘶𝘩𝘶𝘳 𝘢𝘵𝘢𝘶 𝘵𝘶𝘫𝘶𝘢𝘯 𝘣𝘦𝘳𝘴𝘢𝘮𝘢”
+  </p>
+  <a href="#about" class="btn">JELAJAHI KENANGAN</a>
+</div>
+
+<section class="about" id="about">
+  <h2 class="judul">Tentang Arthavena</h2>
+  <p>
+    ARTHAVENA adalah sebuah cerita tentang perjalanan
+    satu angkatan. ARTHAVENA Memiliki ari “𝘬𝘦𝘮𝘢𝘬𝘮𝘶𝘳𝘢𝘯, 𝘯𝘪𝘭𝘢𝘪 𝘯𝘪𝘭𝘢𝘪 𝘭𝘶𝘩𝘶𝘳 𝘢𝘵𝘢𝘶 𝘵𝘶𝘫𝘶𝘢𝘯 𝘣𝘦𝘳𝘴𝘢𝘮𝘢”.
+    <br><br>
+    Waktu boleh membawa kita ke jalan masing-masing,
+    tetapi cerita ini akan tetap menjadi bagian
+    dari perjalanan hidup kita.
+  </p>
+</section>
+
+<section id="gallery">
+  <h2 class="judul">Galeri Kenangan</h2>
+  <div class="gallery">
+    <p style="color:goldenrod"
+    <h1>XII TBSM 1</h1>
+    <img src="xiitsm1.jpg">
+    <p style="color:goldenrod"margin-top:20px;
+    <h1>XII TBSM 2</h1>
+    <img src="xiitsm2.jpg">
+      <p style="color:goldenrod"margin-top:20px
+      <h1>XII TBSM 3</h1>
+    <img src="xiitsm3.jpg">
+  </div>
+</section>
+
+<section id="story">
+  <h2 class="judul">Our Journey</h2>
+
+  <div class="timeline">
+    <div class="event">
+      <h3>2023 — Awal Cerita</h3>
+      <p>Hari pertama bertemu, mengenal teman baru,
+      dan memulai perjalanan bersama.</p>
+    </div>
+
+    <div class="event">
+      <h3>2024 — Banyak Cerita</h3>
+      <p>Belajar, bercanda, berjuang,
+      dan menciptakan kenangan.</p>
+    </div>
+
+    <div class="event">
+      <h3>2025 — Semakin Dekat</h3>
+      <p>Semakin banyak pengalaman
+      yang tidak akan terlupakan.</p>
+    </div>
+
+    <div class="event">
+      <h3>2026 — Akhir Sekaligus Awal</h3>
+      <p>Waktunya melangkah menuju masa depan
+      dengan membawa semua kenangan.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h3 style="color:#d6b46a">ARTHEVANA</h3>
+  <p>One Generation, Thousand Memories.</p>
+  <p>© 2026 Angkatan ARTHEVANA</p>
+</footer>
+
+</body>
+</html>
